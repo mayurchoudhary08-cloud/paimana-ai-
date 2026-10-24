@@ -73,7 +73,7 @@ export default function App() {
     <ThemeProvider>
       <FilterProvider>
         <APIProvider apiKey={GOOGLE_MAPS_API_KEY}>
-          <Router>
+          <Router basename={import.meta.env.BASE_URL}>
             <AppContent />
           </Router>
         </APIProvider>
